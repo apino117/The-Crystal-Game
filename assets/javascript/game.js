@@ -25,13 +25,20 @@ $(document).ready(function () {
 
     // Variables
     var targetNumber = Math.floor((Math.random() * 120) + 19);
+    var activeScore = 0;
+    $("#activescore").text("Active Score: " + activeScore);
+    
 
     // Initialization Function
     function initialization() {
-        console.log(targetNumber);
+        $("#targetnumb").text("Target Number: " + targetNumber);
     }
-
     initialization()
+
+    // Adder function
+    function adder(x, y) {
+        return(x + y);
+    }
 
 
     // Wins
@@ -71,13 +78,21 @@ $(document).ready(function () {
             prismNumber = Math.floor((Math.random() * 12) + 1);
             console.log(prismNumber);
 
+            // Add number to score
+            activeScore = adder(activeScore, prismNumber);
+            console.log(activeScore);
+
+            // Update DOM
+            $("#activescore").text("Active Score: " + activeScore);
+
             // Flip the clicked flag
             isprismClicked = true;
 
         }
         // If it has already been clicked
         else {
-            // Use the same number
+
+            // Use the same number to update
             console.log(prismNumber);
 
         }
