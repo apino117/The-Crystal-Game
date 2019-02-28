@@ -16,13 +16,68 @@ var lossCounter = 0;
 var losses = $("#losses");
 losses.text("Losses: " + lossCounter);
 
+// Crystals
+var prismatic = $("#crystal1");
+var ruby = $("#crystal2");
+var sapphire = $("#crystal3");
+var diamond = $("#crystal4");
+
+// On Click Functions for the Crystals
+
+// When crystal gets clicked
+$(prismatic).on("click", function () {
+    
+    // Create a variable to hold number
+    $("prismNumber");
+
+    // Number is betwen 1 & 12
+    prismNumber = Math.floor((Math.random() * 12) +1);
+    console.log(prismNumber);
+})
+// When crystal gets clicked
+$(ruby).on("click", function () {
+    
+    // Create a variable to hold number
+    $("rubyNumber");
+
+    // Number is betwen 1 & 12
+    rubyNumber = Math.floor((Math.random() * 12) +1);
+    console.log(rubyNumber);
+})
+// When crystal gets clicked
+$(sapphire).on("click", function () {
+    
+    // Create a variable to hold number
+    $("sapphireNumber");
+
+    // Number is betwen 1 & 12
+    sapphireNumber = Math.floor((Math.random() * 12) +1);
+    console.log(sapphireNumber);
+})
+// When crystal gets clicked
+$(diamond).on("click", function () {
+    
+    // Create a variable to hold number
+    $("diamondNumber");
+
+    // Number is betwen 1 & 12
+    diamondNumber = Math.floor((Math.random() * 12) +1);
+    console.log(diamondNumber);
+})
 
 // Initialization Function
-function initialization () {
+function initialization() {
     console.log(targetNumber);
 }
 
 initialization()
+
+// On Document Ready
+// $(document).ready(function () {
+
+// }
+
+
 
 
 
