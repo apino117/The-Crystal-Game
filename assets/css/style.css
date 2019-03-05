@@ -1,8 +1,21 @@
+body {
+    color: whitesmoke;
+    /* Setting Background Image */
+    background-image: url("../images/art-art-materials-background-1191710.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 96px;
+}
+
 /* Type Attributes */
 
 #title-row {
     justify-content: center;
-    padding: 50px;
+    margin-top: -50px;
 }
 
 h1 {
@@ -18,30 +31,27 @@ h1 {
 h2, h3 {
     font-family: monospace;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px #3e0082;
 }
 
 p {
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
 }
 
-/* Crstyal Columns */
-#crystal-row {
-    justify-content: center;
-}
-#crystal-column {
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 75px;
+img {
+    height: 200px;
+    width: 200px;
 }
 
 /* Rows */
 #numberscore-row {
     padding-bottom: 65px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 #winsloss-row {
     padding-bottom: 65px;
@@ -54,9 +64,6 @@ p {
     bottom: 0;
 }
 
-#audio-wrapper {
-    padding: 22px;
-}
 
 #copyright-text {
     color: #e1f0ff!important;

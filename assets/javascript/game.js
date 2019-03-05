@@ -113,13 +113,13 @@ $(document).ready(function () {
     // Win condition function
     function winCheck(x, y) {
         if (x === y) {
-            alert("Win");
+            alert("You've done it! The world is one crystal game closer to being solved!");
             winCounter++;
             wins.text("Wins: " + winCounter);
             resetNumber();
 
         } else if (x > y) {
-            alert("Lose");
+            alert("You've lost - but its okay, try again - time is a human construct!");
             lossCounter++;
             losses.text("Losses: " + lossCounter);
             resetNumber();
