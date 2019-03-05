@@ -1,0 +1,66 @@
+/* Type Attributes */
+
+#title-row {
+    justify-content: center;
+    padding: 50px;
+}
+
+h1 {
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 81px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* Crstyal Columns */
+#crystal-row {
+    justify-content: center;
+}
+#crystal-column {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 75px;
+}
+
+/* Rows */
+#numberscore-row {
+    padding-bottom: 65px;
+    padding-top: 50px;
+}
+#winsloss-row {
+    padding-bottom: 65px;
+    padding-top: 50px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#audio-wrapper {
+    padding: 22px;
+}
+
+#copyright-text {
+    color: #e1f0ff!important;
+    text-shadow: 2px 2px #e8030385;
+    margin-left: 10px;
+    margin-top: 20px;
+}

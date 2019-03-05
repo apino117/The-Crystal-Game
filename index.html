@@ -6,89 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-    <!-- Main Content  -->
+    <div class="container" id="content-container">
+        <!-- Main Content  -->
 
-    <!-- Title -->
-    <div class="container" id="title-cont">
-        <div class="row" id="title-row">
-            <div class="column" id="title-column">
-                <h1 id="title">We! Are the crystal game!</h1>
+        <!-- Title -->
+        <div class="container" id="title-cont">
+            <div class="row" id="title-row">
+                <div class="col-12" id="title-column">
+                    <h1 id="title">We! Are the crystal game!</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Intstructions -->
+        <div class="container" id="instructions-cont">
+            <div class="row" id="instructions-row">
+                <div class="col-12" id="instructions-column">
+                    <h2>Instructions:</h2>
+                    <p id="instructions">Hey hey! What's goin on? Here's what's about to go down: we got these here
+                        crstals, alright? We
+                        also got this target number over there, okay? Follow me so far? Okay, so you gotta click these
+                        crystals - when that happens they're
+                        gonna tell you what value they have by adding it to your score. It's your job to remember each
+                        value. To win you have to match your
+                        active score to
+                        the target number using a combination of the crystal's values according to your memory, but
+                        careful - if you go over the score you'll lose the game and a computer
+                        virus may or may not be executed and emailed to everyone in your contacts
+                        page! If you win there might be snacks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Target Number / Active Score Row -->
+        <div class="container" id="numberscore-cont">
+            <div class="row" id="numberscore-row">
+                <!-- Target Number -->
+                <div class="col-6" id="targetnumb-column">
+                    <h2 id="targetnumb">Target Number:</h2>
+                </div>
+                <!-- Active Score -->
+                <div class="col-6" id="activescore-column">
+                    <h2 id="activescore">Active Score:</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Crystal Objects / Images -->
+        <div class="container" id="crystal-cont">
+            <div class="row" id="crystal-row">
+                <div class="col-3" id="crystal-column">
+                    <h2 id="crystal1"><img src="assets/images/Prismatic-Gem-small.png" alt="Prismatic-Gem"></h2>
+                </div>
+                <div class="col-3" id="crystal-column">
+                    <h2 id="crystal2"><img src="assets/images/misc-gem-ruby.png" alt="Ruby"></h2>
+                </div>
+                <div class="col-3" id="crystal-column">
+                    <h2 id="crystal3"><img src="assets/images/misc-gem-sapphire.png" alt="Sapphire"></h2>
+                </div>
+                <div class="col-3" id="crystal-column">
+                    <h2 id="crystal4"><img src="assets/images/Star-Diamond-Final.png" alt="Star Diamond"></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wins, Losses -->
+        <div class="container" id="wins-cont">
+            <div class="row" id="winsloss-row">
+                <div class="col-6" id="wins-column">
+                    <h2 id="wins">Wins:</h2>
+                </div>
+                <div class="col-6" id="losses-column">
+                    <h2 id="losses">Losses:</h2>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Intstructions -->
-    <div class="container" id="instructions-cont">
-        <div class="row" id="instructions-row">
-            <div class="column" id="instructions-column">
-                <h2>Instructions:</h2>
-                <p id="instructions">Hey hey! Here's what's about to go down: we got these here crstals, alright? We
-                    also got this number over there, okay? You gotta click these crystals, when that happens they're
-                    gonna tell you what value they have by adding it to your score. It's your job to remember each value
-                    and use the combination to hit that target score. Careful, if you go over the score you'll lose the
-                    game and a computer virus will be executed and emailed to everyone in your contacts page!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Target Number -->
-    <div class="container" id="targetnumb-cont">
-        <div class="row" id="targetnumb-row">
-            <div class="column" id="targetnumb-column">
-                <h2 id="targetnumb">Target Number:</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Wins, Losses -->
-    <div class="container" id="wins-cont">
-        <div class="row" id="wins-row">
-            <div class="column" id="wins-column">
-                <h2 id="wins">Wins:</h2>
-            </div>
-            <div class="column" id="losses-column">
-                <h2 id="losses">Losses:</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Crystal Objects / Images -->
-    <div class="container" id="crystal-cont">
-        <div class="row" id="crystal-row">
-            <div class="column" id="crystal-column">
-                <h2 id="crystal1"><img src="assets/images/Prismatic-Gem-small.png" alt="Prismatic-Gem"></h2>
-            </div>
-            <div class="column" id="crystal-column">
-                <h2 id="crystal2"><img src="assets/images/misc-gem-ruby.png" alt="Ruby"></h2>
-            </div>
-            <div class="column" id="crystal-column">
-                <h2 id="crystal3"><img src="assets/images/misc-gem-sapphire.png" alt="Sapphire"></h2>
-            </div>
-            <div class="column" id="crystal-column">
-                <h2 id="crystal4"><img src="assets/images/Star-Diamond-Final.png" alt="Star Diamond"></h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Active Score -->
-    <div class="container" id="activescore-cont">
-        <div class="row" id="activescore-row">
-            <div class="column" id="activescore-column">
-                <h2 id="activescore">Active Score:</h2>
-            </div>
-        </div>
-    </div>
 
     <!-- Javascript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <small class="text-muted">
+            <div class="row">
+                <!-- Copyright Text -->
+                <div class="col-6">
+                    <p id="copyright-text">
+                        Copyright © AP Incorporated, 2019 - "Crystal Game Background Music" is an Original Composition
+                        by DJ
+                        Watcha
+                    </p>
+                </div>
+                <!-- Music -->
+                <div class="col-6" id="audio-wrapper">
+                    <audio id="bgMusic" controls>
+                        <source src="assets/Crystal Game Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </small>
+    </footer>
+
 </body>
 
 </html>

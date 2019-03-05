@@ -44,8 +44,7 @@ var activeScore = 0;
 $("#activescore").text("Active Score: " + activeScore);
 
 $(document).ready(function () {
-
-    // Note to self: put all bvariables outside of global scope first. 
+    
 
 
     // Initialization Function
@@ -132,6 +131,11 @@ $(document).ready(function () {
         // Reset Score + Number
         activeScore = 0;
         targetNumber = Math.floor((Math.random() * 120) + 19);
+        // Reset Crystal Numbers
+        prismNumber = Math.floor((Math.random() * 12) + 1);
+        rubyNumber = Math.floor((Math.random() * 12) + 1);
+        sapphireNumber = Math.floor((Math.random() * 12) + 1);
+        diamondNumber = Math.floor((Math.random() * 12) + 1);
         // Update DOM
         $("#activescore").text("Active Score: " + activeScore);
         $("#targetnumb").text("Target Number: " + targetNumber);
