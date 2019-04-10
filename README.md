@@ -12,5 +12,7 @@ To start click a cystal and see what number it gives you! The rest is up to fate
 
 If you need any assistance or just have general questions please contact Bachs at AP Incorporated, 1735 Market St. Ste A69 Philadelphia, PA 19103
 
+https://apino117.github.io/The-Crystal-Game/
+
 ![CrystalGif](assets/images/crystalchange.gif) 
 
